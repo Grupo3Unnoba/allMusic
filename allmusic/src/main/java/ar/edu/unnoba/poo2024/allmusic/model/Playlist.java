@@ -22,7 +22,7 @@ public class Playlist {
             joinColumns = @JoinColumn(name = "playlist_id"),
             inverseJoinColumns = @JoinColumn(name = "song_id")
     )
-    private List<Song> songs;
+     private List<Song> songs= new ArrayList<Song>();
 
     public Long getId() {
         return id;
